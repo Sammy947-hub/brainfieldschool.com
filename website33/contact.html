@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Brainfield School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 12px #00f0f0;
+    }
+
+    header h1 {
+      color: #00f0f0;
+      font-size: 2.5rem;
+      text-shadow: 0 0 12px #00f0f0;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      box-shadow: 0 0 8px #00f0f0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00f0f0;
+      color: #000;
+      box-shadow: 0 0 10px #00f0f0;
+    }
+
+    .hero {
+      background: url('call.jpg') no-repeat center/cover;
+      text-align: center;
+      padding: 70px 20px;
+      box-shadow: inset 0 0 100px rgba(0, 255, 255, 0.2);
+    }
+
+    .hero h2 {
+      font-size: 2.7rem;
+      color: #00f0f0;
+      text-shadow: 0 0 15px #00f0f0;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #ddd;
+      max-width: 700px;
+      margin: 20px auto 0;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1 1 45%;
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00f0f0;
+    }
+
+    .contact-info h3, .contact-form h3 {
+      color: #00f0f0;
+      text-shadow: 0 0 10px #00f0f0;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background-color: #222;
+      border: 1px solid #00f0f0;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #00f0f0;
+      border: none;
+      padding: 12px 25px;
+      color: #000;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00f0f0;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #00cccc;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 0 15px #00f0f0;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      color: #999;
+      margin-top: 40px;
+      box-shadow: 0 0 10px #00f0f0;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fade-in">
+    <h1>Brainfield School</h1>
+  </header>
+
+  <nav class="fade-in" style="animation-delay: 0.5s;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="academics.html">Academics</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero fade-in" style="animation-delay: 1s;">
+    <h2>Contact Us</h2>
+    <p>We're here to assist you. Reach out to Brainfield School today.</p>
+  </div>
+
+  <div class="container fade-in" style="animation-delay: 1.5s;">
+    <div class="contact-section">
+      <div class="contact-info">
+        <h3>📍 Visit Us</h3>
+        <p>Brainfield School<br>
+        Off West Hills Road, Accra, Ghana</p>
+
+        <h3>📞 Call Us</h3>
+        <p>+233 20 751 2879<br>+233 53 897 7257</p>
+
+        <h3>📧 Email</h3>
+        <p>info@brainfieldschool.edu.gh<br>admissions@brainfieldschool.edu.gh</p>
+      </div>
+
+      <div class="contact-form">
+        <h3>✉ Send a Message</h3>
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <input type="text" name="name" placeholder="Your Full Name" required />
+          <input type="email" name="email" placeholder="Your Email Address" required />
+          <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <iframe class="fade-in" style="animation-delay: 2s;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.074921764525!2d-0.19583722688834368!3d5.7518716316528975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf772bc6bc4b71%3A0x4db3bd842da57b64!2sBrainfield%20School%20(Ghana)!5e1!3m2!1sen!2sgh!4v1753472623688!5m2!1sen!2sgh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <footer class="fade-in" style="animation-delay: 2.5s;">
+    &copy; 2025 Brainfield School. All rights reserved.
+  </footer>
+
+</body>
+</html>

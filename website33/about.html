@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Brainfield School</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #020d1b, #0b1d2a);
+      color: #ffffff;
+      scroll-behavior: smooth;
+      opacity: 0;
+      animation: bodyFadeIn 1.5s ease-in forwards;
+    }
+
+    @keyframes bodyFadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      background-color: #071422;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 0 15px #00f2ff;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #00f2ff;
+      text-shadow: 0 0 12px #00ffff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      background: #0f1b2d;
+      padding: 12px 0;
+      box-shadow: 0 0 10px #00d1d1;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #00e6e6;
+      color: #0b1d2a;
+    }
+
+    .hero {
+      background: url('Discover.jpg') no-repeat center center/cover;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(2px);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      z-index: 1;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00e6e6;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .section {
+      background: #132236;
+      border-radius: 12px;
+      margin-bottom: 35px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      animation: fadeInUp 1s ease forwards;
+      transition: transform 0.3s;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+    }
+
+    .section h3 {
+      color: #00ffff;
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+    }
+
+    .section p {
+      line-height: 1.7;
+      color: #c9d6e1;
+      margin-bottom: 15px;
+    }
+
+    .section img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #00e6e6;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #071422;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      box-shadow: 0 0 10px #00f2ff;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+        padding: 0 15px;
+      }
+
+      .section img {
+        max-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Brainfield School</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Discover Our Story</h2>
+  </div>
+
+  <section class="content">
+    <div class="section">
+      <h3>🌍 Vision</h3>
+      <p>To be a beacon of excellence, nurturing responsible, globally-minded individuals through innovative and holistic education.</p>
+    </div>
+
+    <div class="section">
+      <h3>🎯 Mission</h3>
+      <p>To deliver high-quality education rooted in integrity, innovation, and inclusivity—empowering students to lead and excel.</p>
+    </div>
+
+    <div class="section">
+      <h3>💻 Innovation & Technology</h3>
+      <p>Equipped with a modern computer lab, we prepare our students for the digital age through immersive tech-based learning.</p>
+      <img src="https://images.pexels.com/photos/1181351/pexels-photo-1181351.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Tech lab">
+    </div>
+
+    <div class="section">
+      <h3>📚 Academic Excellence</h3>
+      <p>Our learners are supported by passionate teachers and a curriculum that drives curiosity, discipline, and lifelong learning.</p>
+      <img src="https://images.pexels.com/photos/8729551/pexels-photo-8729551.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Classroom learning">
+    </div>
+
+    <div class="section">
+      <h3>⚽ Holistic Growth</h3>
+      <p>From music and sports to science clubs and field trips, we promote creativity, confidence, and teamwork beyond the classroom.</p>
+      <img src="https://images.pexels.com/photos/8613317/pexels-photo-8613317.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Extracurricular">
+    </div>
+
+    <div class="section">
+      <h3>🏆 Legacy of Excellence</h3>
+      <p>With over a decade of shaping brilliant minds, Brainfield School continues to raise leaders who shine in academics and service.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Brainfield School. Crafted with excellence and purpose.
+  </footer>
+
+</body>
+</html>

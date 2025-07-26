@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brainfield School - Excellence in Learning</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      background: #111;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 18px #00f0f0;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00f0f0;
+      text-shadow: 0 0 20px #00f0f0;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px;
+      box-shadow: 0 0 10px #00f0f0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 4px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00f0f0;
+      color: #000;
+      border-radius: 5px;
+      box-shadow: 0 0 12px #00f0f0;
+    }
+
+    .hero {
+      background: url('inspire.jpeg') no-repeat center/cover;
+      text-align: center;
+      padding: 130px 20px;
+      box-shadow: inset 0 0 80px rgba(0, 255, 255, 0.3);
+    }
+
+    .hero h2 {
+      font-size: 3.2rem;
+      color: #00f0f0;
+      text-shadow: 0 0 18px #00f0f0;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #eee;
+      max-width: 780px;
+      margin: 20px auto 0;
+    }
+
+    .mission {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #0a0a0a;
+    }
+
+    .mission h2 {
+      color: #00f0f0;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00f0f0;
+    }
+
+    .mission p {
+      max-width: 850px;
+      margin: auto;
+      color: #ccc;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #111;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00f0f0;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-12px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 10px #00f0f0;
+    }
+
+    .card h3 {
+      color: #00f0f0;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      text-shadow: 0 0 8px #00f0f0;
+    }
+
+    .card p {
+      color: #ccc;
+      font-size: 0.96rem;
+    }
+
+    .image-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .image-section img {
+      width: 90%;
+      max-width: 950px;
+      border-radius: 14px;
+      box-shadow: 0 0 25px #00f0f0;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 25px;
+      color: #aaa;
+      box-shadow: 0 0 12px #00f0f0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fade-in">
+    <h1>Brainfield School</h1>
+    <p>Shaping Young Minds for a Brighter Tomorrow</p>
+  </header>
+
+  <nav class="fade-in" style="animation-delay: 0.3s;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero fade-in" style="animation-delay: 0.6s;">
+    <h2>Inspiring Greatness Through Education</h2>
+    <p>Welcome to Brainfield School – where every child’s dream is nurtured through excellence, creativity, and a lifelong love of learning.</p>
+  </div>
+
+  <section class="mission fade-in" style="animation-delay: 0.8s;">
+    <h2>Our Mission</h2>
+    <p>We aim to empower learners through innovative teaching, strong moral values, and a commitment to holistic development. Brainfield is not just a school – it's a community where leaders are made and futures are shaped with passion and precision.</p>
+  </section>
+
+  <section class="sections fade-in" style="animation-delay: 1.1s;">
+    <div class="card">
+      <img src="Academic.jpeg" alt="Classroom Excellence">
+      <h3>Academic Excellence</h3>
+      <p>Rigorous and creative curriculum that pushes students to think critically, perform confidently, and excel globally.</p>
+    </div>
+    <div class="card">
+      <img src="Safe.jpeg" alt="Safe Environment">
+      <h3>Safe & Secure Campus</h3>
+      <p>A safe haven for all learners with 24/7 security systems, health care, and child-friendly learning spaces.</p>
+    </div>
+    <div class="card">
+      <img src="Innovation.jpg" alt="Tech Learning">
+      <h3>Innovation & Technology</h3>
+      <p>Well-equipped computer labs, robotics, and e-learning platforms that prepare learners for the digital world.</p>
+    </div>
+    <div class="card">
+      <img src="holy.jpg" alt="Growth and Skills">
+      <h3>Holistic Growth</h3>
+      <p>From sports to moral education, we build resilient learners who grow mentally, physically, and spiritually.</p>
+    </div>
+    <div class="card">
+      <img src="Leadership.jpg" alt="Leadership Skills">
+      <h3>Leadership Development</h3>
+      <p>Students gain confidence through leadership programs, school clubs, and public speaking engagements.</p>
+    </div>
+    <div class="card">
+      <img src="Arts.jpg" alt="Creative Arts">
+      <h3>Creative Arts & Expression</h3>
+      <p>We nurture expression and creativity through music, drama, art, and dance – letting each voice be heard.</p>
+    </div>
+  </section>
+
+  <section class="image-section fade-in" style="animation-delay: 1.3s;">
+    <img src="hard.jpeg" alt="Brainfield School Overview">
+  </section>
+
+  <footer class="fade-in" style="animation-delay: 1.5s;">
+    &copy; 2025 Brainfield School. All rights reserved. | Designed with ❤️ and creativity.
+  </footer>
+
+</body>
+</html>

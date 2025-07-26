@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admissions - Brainfield School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 12px #00f0f0;
+    }
+
+    header h1 {
+      color: #00f0f0;
+      font-size: 2.5rem;
+      text-shadow: 0 0 12px #00f0f0;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      box-shadow: 0 0 8px #00f0f0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00f0f0;
+      color: #000;
+      box-shadow: 0 0 10px #00f0f0;
+    }
+
+    .hero {
+      background: url('admission.jpg') no-repeat center/cover;
+      text-align: center;
+      padding: 70px 20px;
+      box-shadow: inset 0 0 100px rgba(0, 255, 255, 0.2);
+    }
+
+    .hero h2 {
+      font-size: 2.7rem;
+      color: #00f0f0;
+      text-shadow: 0 0 15px #00f0f0;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #ddd;
+      max-width: 700px;
+      margin: 20px auto 0;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section {
+      background-color: #111;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00f0f0;
+    }
+
+    .section h3 {
+      color: #00f0f0;
+      text-shadow: 0 0 10px #00f0f0;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      color: #999;
+      margin-top: 40px;
+      box-shadow: 0 0 10px #00f0f0;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fade-in">
+    <h1>Brainfield School</h1>
+  </header>
+
+  <nav class="fade-in" style="animation-delay: 0.5s;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="academics.html">Academics</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero fade-in" style="animation-delay: 1s;">
+    <h2>Admissions</h2>
+    <p>Join a vibrant community where excellence meets opportunity.</p>
+  </div>
+
+  <div class="container fade-in" style="animation-delay: 1.5s;">
+    <div class="section">
+      <h3>📅 Enrollment Period</h3>
+      <p>Admissions for Nursery through JHS are open from June to August each year. Early application is encouraged as spaces are limited.</p>
+    </div>
+
+    <div class="section">
+      <h3>📝 Admission Requirements</h3>
+      <p>Prospective students must provide:</p>
+      <ul>
+        <li>Completed application form</li>
+        <li>Photocopy of birth certificate</li>
+        <li>Most recent school report (if applicable)</li>
+        <li>Two passport-sized photos</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>📂 Application Process</h3>
+      <p>
+        Applications can be submitted in person or online. Entrance assessments may be required depending on grade level. After successful evaluation, an admission letter will be issued.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>🎓 Scholarships</h3>
+      <p>Brainfield offers merit-based scholarships to outstanding students. Applicants may apply during the admission period with academic or creative portfolios.</p>
+    </div>
+
+    <div class="section">
+      <h3>🏫 Visit Our Campus</h3>
+      <p>We welcome all parents and guardians to visit our serene, secure, and fully equipped campus. Schedule a tour today and experience the Brainfield difference.</p>
+    </div>
+  </div>
+
+  <footer class="fade-in" style="animation-delay: 2s;">
+    &copy; 2025 Brainfield School. All rights reserved.
+  </footer>
+
+</body>
+</html>
